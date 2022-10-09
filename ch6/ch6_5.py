@@ -18,8 +18,11 @@ def decrypt(text, s):
 
 text, n = input("Enter a word and a number: ").split()
 n = int(n)
+text = "testcipher"
+n = 3
 if n <= 0:
     print("Number must be between 1-26")
     exit()
+#n = n * -1 inverse key
 decrypted = decrypt(text, n)
 print(decrypted.upper())
