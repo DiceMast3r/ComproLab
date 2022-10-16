@@ -17,5 +17,5 @@ for i in range(len(lst)):
         num = lst[i]
     elif lst.count(lst[i]) == min_x:
         print(min(lst, key=lst.count))
-        quit()
+        #quit()
 print(num)

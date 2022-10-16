@@ -1,12 +1,11 @@
-print("*** Maximum Occurrence ***")
-lst = input("Enter some numbers: ").split()
-lst = [int(i) for i in lst]
-max = 0
-for i in range(len(lst)):   #check for occurrence of each number
-    if lst.count(lst[i]) > max:
-        max = lst.count(lst[i])
-        num = lst[i]
-print(num)
-
-
-
+n = int(input())
+lst = []
+lst_2 = []
+for i in range(1, n):
+    lst.append(int(input()))
+lst.sort()
+for j in range(0, lst[-1]):
+    if j not in lst:
+        lst_2.append(j)
+for k in lst_2:
+    print(k)
