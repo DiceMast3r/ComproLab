@@ -18,7 +18,7 @@ def Convert_to_dict(lst): # convert list to dictionary
 fig, ax = plt.subplots(figsize=(6, 3), subplot_kw=dict(aspect="equal")) # create figure and axis
 
 inp = input(
-    "Enter in pair (category1 value1,category2 value2,...): ").strip().split(",") # get input
+    "Enter in pair (category_1 value1,category_2 value2,...): ").strip().split(",") # get input
 for i in range(len(inp)):  # this loop removes the spaces
     inp[i] = inp[i].strip()
 

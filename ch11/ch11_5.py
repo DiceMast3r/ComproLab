@@ -40,13 +40,13 @@ elif x.isupper() == False:
     print("FAILED TO DECRYPT")
     exit()
 # Check if x contains any characters other than A, D, F, G, X
-for i in x:
-    if i not in ('A', 'D', 'F', 'G', 'X'):
+for i in x:  # i is each character in x
+    if i not in ('A', 'D', 'F', 'G', 'X'): 
         print("FAILED TO DECRYPT")
         exit()
 else:
     a = []
-    for i in range(0, len(x), 2):
-        a.append(x[i:i+2])
+    for i in range(0, len(x), 2): 
+        a.append(x[i:i+2]) # Split x into pairs
     for j in a:
-        print(cipher_key[tuple(j.upper())], end="")
+        print(cipher_key[tuple(j.upper())], end="") 
